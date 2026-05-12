@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Klint Vincent M. Lloren - Web Developer, Cybersecurity Specialist, Data Analyst & Encoder">
+    <meta name="keywords" content="web developer, cybersecurity, data analyst, portfolio, IT student, full-stack developer">
+    <meta name="author" content="Klint Vincent M. Lloren">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-portfolio-url.com/">
+    <meta property="og:title" content="Klint Vincent M. Lloren | Portfolio">
+    <meta property="og:description" content="Web Developer, Cybersecurity Specialist, Data Analyst & Encoder">
+    <meta property="og:image" content="https://your-portfolio-url.com/social-preview.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-portfolio-url.com/">
+    <meta property="twitter:title" content="Klint Vincent M. Lloren | Portfolio">
+    <meta property="twitter:description" content="Web Developer, Cybersecurity Specialist, Data Analyst & Encoder">
+    <meta property="twitter:image" content="https://your-portfolio-url.com/social-preview.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/script.js" as="script">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <title>Klint Vincent M. Lloren | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Klint Vincent M. Lloren",
+        "url": "https://your-portfolio-url.com",
+        "image": "https://your-portfolio-url.com/Resume%20&%20CV/Profile%20Picture/First%20Picture.jpg",
+        "sameAs": [
+            "https://www.facebook.com/share/1BRNkR4fYm/",
+            "https://www.instagram.com/_eroslopez"
+        ],
+        "jobTitle": "Web Developer, Cybersecurity Specialist, Data Analyst",
+        "worksFor": {
+            "@type": "EducationalOrganization",
+            "name": "Mindanao State University"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Mindanao State University"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Polomolok",
+            "addressRegion": "South Cotabato",
+            "addressCountry": "Philippines"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <nav class="nav-bar" id="navBar" aria-label="Main navigation">
+        <div class="nav-bar__container">
+            <div class="nav-bar__logo" aria-label="Home">KV Lloren</div>
+            <div class="nav-bar__links" role="menubar">
+                <a href="#hero" class="nav-bar__link" data-nav-link aria-label="Go to Home section">Home</a>
+                <a href="#about" class="nav-bar__link" data-nav-link aria-label="Go to About section">About</a>
+                <a href="#skills" class="nav-bar__link" data-nav-link aria-label="Go to Skills section">Skills</a>
+                <a href="#achievements" class="nav-bar__link" data-nav-link aria-label="Go to Achievements section">Achievements</a>
+                <a href="#projects" class="nav-bar__link" data-nav-link aria-label="Go to Resume & CV section">Resume & CV</a>
+                <a href="#contact" class="nav-bar__link" data-nav-link aria-label="Go to Contact section">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" aria-pressed="false">
+        <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+        <span class="sr-only">Toggle dark mode</span>
+    </button>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <!-- Left Side: Text Content -->
+                <div class="hero__text-side" data-animate>
+                    <div class="hero__text-content">
+                        <p class="hero__greeting">
+                            <span id="cyclingHi">hi</span>.
+                        </p>
+                        <p class="hero__name">
+                            I'm <span class="hero__name--first">Klint Vincent</span> <span class="hero__name--last">Lloren</span>.
+                        </p>
+                    </div>
+                    <p class="hero__intro">I'm a 20-year-old IT student at Mindanao State University. I create elegant digital solutions that blend design, code, and problem-solving.</p>
+                    <a href="https://www.google.com/maps/place/Polomolok,+South+Cotabato,+Philippines/@6.2127778,125.0555556,13z" target="_blank" rel="noopener noreferrer" class="hero__location">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        Polomolok, South Cotabato, Philippines
+                    </a>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="hero__social-links">
+                        <a href="https://www.facebook.com/share/1BRNkR4fYm/" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="Visit my Facebook profile">
+                            <img src="icon/facebook_725289.png" alt="Facebook" class="hero__social-icon">
+                        </a>
+                        <a href="https://www.instagram.com/_eroslopez?igsh=MTBlMHNkc3ppdWswaw==" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="Visit my Instagram profile">
+                            <img src="icon/instagram_725278.png" alt="Instagram" class="hero__social-icon">
+                        </a>
+                    </div>
+                    
+                    <div class="hero__cta">
+                        <a href="#contact" class="btn btn--magnetic">
+                            <span class="btn__text">→ get in touch</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Side: Profile Picture -->
+                <div class="hero__image-side" data-animate>
+                    <div class="hero__profile-container">
+                        <div class="hero__profile-picture" id="profilePicture">
+                            <img src="Resume & CV/Profile Picture/First Picture.jpg" alt="Klint Vincent Lloren" class="profile-img">
+                            <img src="Resume & CV/Profile Picture/Second Picture.jpg" alt="Klint Vincent Lloren" class="profile-img profile-img--hidden">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Animated Background Elements -->
+        <div class="hero__bg">
+            <div class="hero__bg-circle hero__bg-circle--1"></div>
+            <div class="hero__bg-circle hero__bg-circle--2"></div>
+            <div class="hero__bg-circle hero__bg-circle--3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about__content">
+                <h2 class="section__title" data-animate>About Me</h2>
+                <div class="about__text" data-animate>
+                    <p>I'm a 20 year old IT student at Mindanao State University who enjoys building useful and visually appealing digital products. I combine technical skills with creative problem solving to create solutions that are both functional and engaging. I approach every project with curiosity and attention to detail, whether developing web applications, working on cybersecurity, analyzing data, or solving complex problems, while continuously exploring new technologies and improving my skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with Circular Progress -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section__title" data-animate>Skills & Expertise</h2>
+            <div class="skills__grid">
+                <!-- Skill 1: Website Development -->
+                <div class="skill__circle" data-animate>
+                    <div class="skill__circle-content">
+                        <div class="skill__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <div class="skill__info">
+                            <h3 class="skill__name">Website Dev</h3>
+                        </div>
+                    </div>
+                    <p class="skill__description">Full-stack web development, responsive design, modern frameworks</p>
+                </div>
+
+                <!-- Skill 2: Cybersecurity -->
+                <div class="skill__circle" data-animate>
+                    <div class="skill__circle-content">
+                        <div class="skill__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <div class="skill__info">
+                            <h3 class="skill__name">Cybersecurity</h3>
+                        </div>
+                    </div>
+                    <p class="skill__description">Network security, penetration testing, vulnerability assessment</p>
+                </div>
+
+                <!-- Skill 3: Data Encoder/Analyst -->
+                <div class="skill__circle" data-animate>
+                    <div class="skill__circle-content">
+                        <div class="skill__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                        </div>
+                        <div class="skill__info">
+                            <h3 class="skill__name">Data Analysis</h3>
+                        </div>
+                    </div>
+                    <p class="skill__description">Data encoding, analysis, visualization, insight generation</p>
+                </div>
+
+                <!-- Skill 4: Developer -->
+                <div class="skill__circle" data-animate>
+                    <div class="skill__circle-content">
+                        <div class="skill__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="skill__info">
+                            <h3 class="skill__name">Developer</h3>
+                        </div>
+                    </div>
+                    <p class="skill__description">Software development, algorithms, system architecture</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section__title" data-animate>Achievements</h2>
+            
+            <!-- Achievements Grid by Education Level -->
+            <div class="achievements__grid">
+                
+                <!-- Elementary School Column -->
+                <div class="achievements__column" data-animate>
+                    <h3 class="achievements__column-title">Elementary</h3>
+                    <div class="achievements__column-content">
+                        <div class="achievement__card">
+                            <div class="achievement__card-header">
+                                <h4>2011–2017</h4>
+                                <p class="achievement__card-highlight">Academic Achiever</p>
+                            </div>
+                            <p class="achievement__card-description">Consistent excellence in academics and participation throughout elementary school</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Junior High School Column -->
+                <div class="achievements__column" data-animate>
+                    <h3 class="achievements__column-title">Junior High</h3>
+                    <div class="achievements__column-content">
+                        <div class="achievement__card">
+                            <div class="achievement__card-header">
+                                <h4>2017–2021</h4>
+                                <p class="achievement__card-highlight">Academic Excellence</p>
+                            </div>
+                            <p class="achievement__card-description">Outstanding academic performance and leadership maintained throughout junior high school</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Senior High School Column -->
+                <div class="achievements__column" data-animate>
+                    <h3 class="achievements__column-title">Senior High</h3>
+                    <div class="achievements__column-content achievements__column-content--expandable">
+                        <!-- Always visible card (first 1) -->
+                        <div class="achievement__card">
+                            <div class="achievement__card-header">
+                                <h4>2022–2023</h4>
+                                <p class="achievement__card-highlight">Math Club Officer</p>
+                            </div>
+                            <p class="achievement__card-description">Ways and Means Officer — Managed club finances and logistics</p>
+                        </div>
+
+                        <!-- Hidden cards (will be revealed with "View More") -->
+                        <div class="achievement__card achievement__card--hidden">
+                            <div class="achievement__card-header">
+                                <h4>2023–2024</h4>
+                                <p class="achievement__card-highlight">School Journalist</p>
+                            </div>
+                            <p class="achievement__card-description">Covered school events and initiatives as school journalist</p>
+                        </div>
+
+                        <div class="achievement__card achievement__card--hidden">
+                            <div class="achievement__card-header">
+                                <h4>2023</h4>
+                                <p class="achievement__card-highlight">Radio Broadcasting</p>
+                            </div>
+                            <p class="achievement__card-description">Competed in DSPC Radio Broadcasting competition demonstrating public speaking skills</p>
+                        </div>
+
+                        <div class="achievement__card achievement__card--hidden">
+                            <div class="achievement__card-header">
+                                <h4>2021–2023</h4>
+                                <p class="achievement__card-highlight">Trash Can Detector</p>
+                            </div>
+                            <p class="achievement__card-description">Research project combining Arduino and Python for smart waste management</p>
+                        </div>
+
+                        <div class="achievement__card achievement__card--hidden">
+                            <div class="achievement__card-header">
+                                <h4>2021–2023</h4>
+                                <p class="achievement__card-highlight">Academic Excellence</p>
+                            </div>
+                            <p class="achievement__card-description">Consistent dedication to learning and growth throughout senior high</p>
+                        </div>
+                    </div>
+                    <button class="achievements__expand-btn" data-column="senior-high">
+                        View More ↓
+                    </button>
+                </div>
+
+                <!-- College Column -->
+                <div class="achievements__column" data-animate>
+                    <h3 class="achievements__column-title">College</h3>
+                    <div class="achievements__column-content achievements__column-content--expandable">
+                        <!-- Always visible card (first 1) -->
+                        <div class="achievement__card">
+                            <div class="achievement__card-header">
+                                <h4>2024</h4>
+                                <p class="achievement__card-highlight">Best Project Award</p>
+                            </div>
+                            <p class="achievement__card-description">Face Detection with Emotion Recognition — Technical excellence in computer vision</p>
+                        </div>
+
+                        <!-- Hidden cards (will be revealed with "View More") -->
+                        <div class="achievement__card achievement__card--hidden">
+                            <div class="achievement__card-header">
+                                <h4>2024</h4>
+                                <p class="achievement__card-highlight">Film Festival</p>
+                            </div>
+                            <p class="achievement__card-description">Director and Best in Acting award — Demonstrated creativity and performance excellence</p>
+                        </div>
+
+                        <div class="achievement__card achievement__card--hidden">
+                            <div class="achievement__card-header">
+                                <h4>2024</h4>
+                                <p class="achievement__card-highlight">Best Musical Score</p>
+                            </div>
+                            <p class="achievement__card-description">Outstanding contribution to film festival musical score composition</p>
+                        </div>
+
+                        <div class="achievement__card achievement__card--hidden">
+                            <div class="achievement__card-header">
+                                <h4>2024</h4>
+                                <p class="achievement__card-highlight">Top 3 Film</p>
+                            </div>
+                            <p class="achievement__card-description">Film selected as Top 3 finalist in school film competition</p>
+                        </div>
+
+                        <div class="achievement__card achievement__card--hidden">
+                            <div class="achievement__card-header">
+                                <h4>2023–2025</h4>
+                                <p class="achievement__card-highlight">Academic Excellence</p>
+                            </div>
+                            <p class="achievement__card-description">Maintaining academic achievements in BS Information Technology program</p>
+                        </div>
+
+                        <div class="achievement__card achievement__card--hidden">
+                            <div class="achievement__card-header">
+                                <h4>2023–2025</h4>
+                                <p class="achievement__card-highlight">JITS Officer</p>
+                            </div>
+                            <p class="achievement__card-description">Finance & Transportation Officer — Managing finances and logistics</p>
+                        </div>
+
+                        <div class="achievement__card achievement__card--hidden">
+                            <div class="achievement__card-header">
+                                <h4>2024–2025</h4>
+                                <p class="achievement__card-highlight">Community Mapping</p>
+                            </div>
+                            <p class="achievement__card-description">Full-stack development of community resource mapping system</p>
+                        </div>
+
+                        <div class="achievement__card achievement__card--hidden">
+                            <div class="achievement__card-header">
+                                <h4>2025</h4>
+                                <p class="achievement__card-highlight">CTF — 2nd Runner-Up</p>
+                            </div>
+                            <p class="achievement__card-description">DICT Hack for Gov — Technical excellence in cybersecurity challenges</p>
+                        </div>
+
+                        <div class="achievement__card achievement__card--hidden">
+                            <div class="achievement__card-header">
+                                <h4>2024</h4>
+                                <p class="achievement__card-highlight">Hackathon — 1st Place</p>
+                            </div>
+                            <p class="achievement__card-description">Led team to victory with creative problem-solving and technical implementation</p>
+                        </div>
+
+                    </div>
+                    <button class="achievements__expand-btn" data-column="college">
+                        View More ↓
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section__title" data-animate>Featured Project</h2>
+            <div class="projects__grid">
+                <article class="project__card" data-animate>
+                    <div class="project__content">
+                        <h3 class="project__title">Language Learning Platform</h3>
+                        <p class="project__description">An interactive web application designed to facilitate language learning through engaging exercises and progressive content. Built with modern web technologies and focused on user experience.</p>
+                        <div class="project__tags">
+                            <span class="project__tag">Web Development</span>
+                            <span class="project__tag">Education</span>
+                            <span class="project__tag">Interactive Design</span>
+                        </div>
+                        <a href="https://cyph35.github.io/for-lang/" class="project__link" target="_blank" rel="noopener noreferrer">
+                            View Project →
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume & CV Section -->
+    <section id="resume" class="resume-cv">
+        <div class="container">
+            <h2 class="section__title" data-animate>Resume & CV</h2>
+            
+            <!-- Tab Navigation -->
+            <div class="resume-cv__tabs" data-animate>
+                <button class="resume-cv__tab-btn resume-cv__tab-btn--active" data-tab="resume">
+                    Resume
+                </button>
+                <button class="resume-cv__tab-btn" data-tab="cv">
+                    Full CV
+                </button>
+            </div>
+
+            <!-- RESUME TAB -->
+            <div class="resume-cv__content resume-cv__content--active" id="resume-tab">
+                <!-- Resume Header -->
+                <div class="resume__header" data-animate>
+                    <div class="resume__title-block">
+                        <h3 class="resume__name">Klint Vincent M. Lloren</h3>
+                        <p class="resume__role">Information Technology Student | Software, Web & Cybersecurity Focus</p>
+                    </div>
+                    <div class="resume__contact-info">
+                        <span>📍 Polomolok, South Cotabato, Philippines</span>
+                        <span>📧 llorenkvincentvincent@gmail.com</span>
+                        <span>📱 0966 443 2524</span>
+                        <a href="https://github.com/cyph35" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Professional Summary -->
+                <div class="resume__section" data-animate>
+                    <h4 class="resume__section-title">Professional Summary</h4>
+                    <p class="resume__text">
+                        Second-year Bachelor of Science in Information Technology student at Mindanao State University with a strong foundation in software development, web technologies, and applied cybersecurity. Experienced in full-stack development, computer vision systems, and competitive technical events.
+                    </p>
+                </div>
+
+                <!-- Technical Expertise -->
+                <div class="resume__section" data-animate>
+                    <h4 class="resume__section-title">Technical Expertise</h4>
+                    <div class="resume__skills-grid">
+                        <div class="resume__skill-group">
+                            <h5 class="resume__skill-category">Programming</h5>
+                            <p>Python, Java, JavaScript</p>
+                        </div>
+                        <div class="resume__skill-group">
+                            <h5 class="resume__skill-category">Web & App</h5>
+                            <p>HTML, CSS, Django (intermediate), Full-Stack Development</p>
+                        </div>
+                        <div class="resume__skill-group">
+                            <h5 class="resume__skill-category">Databases</h5>
+                            <p>MySQL (intermediate – schema design, CRUD)</p>
+                        </div>
+                        <div class="resume__skill-group">
+                            <h5 class="resume__skill-category">Cybersecurity</h5>
+                            <p>Penetration testing fundamentals, CTF challenges</p>
+                        </div>
+                        <div class="resume__skill-group">
+                            <h5 class="resume__skill-category">Tools & Environment</h5>
+                            <p>Git, GitHub, VS Code, Arduino</p>
+                        </div>
+                        <div class="resume__skill-group">
+                            <h5 class="resume__skill-category">Additional Skills</h5>
+                            <p>UI/UX improvement, debugging, data entry, documentation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Selected Projects -->
+                <div class="resume__section" data-animate>
+                    <h4 class="resume__section-title">Selected Projects</h4>
+                    <div class="resume__projects-list">
+                        <div class="resume__project-item">
+                            <h5>Automatic Face Detection with Facial & Emotion Recognition</h5>
+                            <p class="resume__project-meta">Best Project | Computer Vision & AI</p>
+                            <p>Advanced Python application leveraging computer vision and machine learning for real-time facial and emotion detection.</p>
+                        </div>
+                        <div class="resume__project-item">
+                            <h5>Community Mapping System – Fatima, Uhaw, Gensan</h5>
+                            <p class="resume__project-meta">Full-Stack Development</p>
+                            <p>Web-based community resource mapping and coordination system built with modern web technologies.</p>
+                        </div>
+                        <div class="resume__project-item">
+                            <h5>Portfolio Website</h5>
+                            <p class="resume__project-meta">Front-End Development</p>
+                            <p>Modern, responsive portfolio website built with HTML, CSS, and JavaScript—GitHub-based deployment.</p>
+                        </div>
+                        <div class="resume__project-item">
+                            <h5>Automatic Trash Can Detector</h5>
+                            <p class="resume__project-meta">Arduino & Python | IoT Project</p>
+                            <p>Smart waste management system combining Arduino microcontroller with Python automation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="resume__section" data-animate>
+                    <h4 class="resume__section-title">Professional Experience</h4>
+                    <div class="resume__experience-list">
+                        <div class="resume__exp-item">
+                            <div class="resume__exp-header">
+                                <h5>Finance & Transportation Officer</h5>
+                                <span class="resume__exp-org">Junior Information Technology Society (JITS)</span>
+                            </div>
+                            <p>Managing organizational finances and logistics while supporting student initiatives in IT advancement.</p>
+                        </div>
+                        <div class="resume__exp-item">
+                            <div class="resume__exp-header">
+                                <h5>Capture the Flag Participant</h5>
+                                <span class="resume__exp-org">DICT Hack for Gov 2025 — 2nd Runner-Up</span>
+                            </div>
+                            <p>Competed in national cybersecurity competition, demonstrating technical excellence in security challenges.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="resume__section" data-animate>
+                    <h4 class="resume__section-title">Education</h4>
+                    <div class="resume__education-item">
+                        <h5>Bachelor of Science in Information Technology</h5>
+                        <p class="resume__education-meta">Mindanao State University – General Santos City</p>
+                        <p class="resume__education-meta">2nd Year (Currently Enrolled)</p>
+                    </div>
+                </div>
+
+                <!-- Download Button -->
+                <div class="resume__footer" data-animate>
+                    <a href="Resume & CV/RESUME LLOREN.pdf" download="KlintVincent_Resume.pdf" class="btn btn--magnetic resume__download-btn">
+                        <span class="btn__text">📄 Download Resume (PDF)</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CV TAB -->
+            <div class="resume-cv__content" id="cv-tab">
+                <!-- CV Header -->
+                <div class="cv__header" data-animate>
+                    <h3 class="cv__name">Klint Vincent M. Lloren</h3>
+                    <div class="cv__contact-grid">
+                        <div>
+                            <p class="cv__label">Email</p>
+                            <p>llorenklintvincent@gmail.com</p>
+                        </div>
+                        <div>
+                            <p class="cv__label">Phone</p>
+                            <p>0966 443 2524</p>
+                        </div>
+                        <div>
+                            <p class="cv__label">Location</p>
+                            <p>Polomolok, South Cotabato, Philippines</p>
+                        </div>
+                        <div>
+                            <p class="cv__label">GitHub</p>
+                            <p><a href="https://github.com/cyph35" target="_blank" rel="noopener noreferrer">github.com/cyph35</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career Objective -->
+                <div class="cv__section" data-animate>
+                    <h4 class="cv__section-title">Career Objective</h4>
+                    <p>To pursue opportunities in software development, web technologies, and cybersecurity while continuing academic and professional growth. Seeking roles where I can apply technical expertise and creative problem-solving to build impactful solutions.</p>
+                </div>
+
+                <!-- Educational Background with Accordion -->
+                <div class="cv__section" data-animate>
+                    <h4 class="cv__section-title">Educational Background</h4>
+                    <div class="cv__accordion">
+                        <button class="cv__accordion-btn cv__accordion-btn--active" data-accordion="education">
+                            <span>College</span>
+                            <span class="cv__accordion-icon">−</span>
+                        </button>
+                        <div class="cv__accordion-content cv__accordion-content--active">
+                            <div class="cv__education-item">
+                                <p class="cv__education-degree"><strong>Bachelor of Science in Information Technology</strong></p>
+                                <p class="cv__education-school">Mindanao State University – General Santos City</p>
+                                <p class="cv__education-period">2023–Present (2nd Year)</p>
+                            </div>
+                        </div>
+
+                        <button class="cv__accordion-btn" data-accordion="education">
+                            <span>Senior High School</span>
+                            <span class="cv__accordion-icon">+</span>
+                        </button>
+                        <div class="cv__accordion-content">
+                            <div class="cv__education-item">
+                                <p class="cv__education-degree"><strong>Senior High School</strong></p>
+                                <p class="cv__education-school">Polomolok National High School – South Cotabato</p>
+                                <p class="cv__education-period">2021–2023</p>
+                            </div>
+                        </div>
+
+                        <button class="cv__accordion-btn" data-accordion="education">
+                            <span>Junior High School</span>
+                            <span class="cv__accordion-icon">+</span>
+                        </button>
+                        <div class="cv__accordion-content">
+                            <div class="cv__education-item">
+                                <p class="cv__education-degree"><strong>Junior High School</strong></p>
+                                <p class="cv__education-school">Polomolok National High School – South Cotabato</p>
+                                <p class="cv__education-period">2017–2021</p>
+                            </div>
+                        </div>
+
+                        <button class="cv__accordion-btn" data-accordion="education">
+                            <span>Elementary School</span>
+                            <span class="cv__accordion-icon">+</span>
+                        </button>
+                        <div class="cv__accordion-content">
+                            <div class="cv__education-item">
+                                <p class="cv__education-degree"><strong>Elementary School</strong></p>
+                                <p class="cv__education-school">Polomolok Central School – South Cotabato</p>
+                                <p class="cv__education-period">2011–2017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Distinctions with Accordion -->
+                <div class="cv__section" data-animate>
+                    <h4 class="cv__section-title">Academic Distinctions</h4>
+                    <div class="cv__accordion">
+                        <button class="cv__accordion-btn cv__accordion-btn--active" data-accordion="distinctions">
+                            <span>Honor Student (Grade 1 – Present)</span>
+                            <span class="cv__accordion-icon">−</span>
+                        </button>
+                        <div class="cv__accordion-content cv__accordion-content--active">
+                            <p>Consistent academic achievement with honors recognition across all educational levels.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Experience with Accordion -->
+                <div class="cv__section" data-animate>
+                    <h4 class="cv__section-title">Academic & Technical Experience</h4>
+                    <div class="cv__accordion">
+                        <button class="cv__accordion-btn cv__accordion-btn--active" data-accordion="experience">
+                            <span>College (Current)</span>
+                            <span class="cv__accordion-icon">−</span>
+                        </button>
+                        <div class="cv__accordion-content cv__accordion-content--active">
+                            <ul class="cv__experience-list">
+                                <li><strong>Best Project Award</strong> – Automatic Face Detection with Emotion Recognition</li>
+                                <li><strong>Film Director</strong> – School Film Festival</li>
+                                <li><strong>Best in Acting</strong> – Film Festival Participant</li>
+                                <li><strong>Best Musical Score</strong> – Film Production</li>
+                                <li><strong>Top 3 Film Candidate</strong> – School Competition</li>
+                                <li><strong>JITS Officer</strong> – Junior Information Technology Society</li>
+                                <li><strong>DICT Hack for Gov CTF</strong> – 2nd Runner-Up (2025)</li>
+                                <li><strong>Community Mapping Project</strong> – Full-Stack Development</li>
+                            </ul>
+                        </div>
+
+                        <button class="cv__accordion-btn" data-accordion="experience">
+                            <span>Senior High School</span>
+                            <span class="cv__accordion-icon">+</span>
+                        </button>
+                        <div class="cv__accordion-content">
+                            <ul class="cv__experience-list">
+                                <li><strong>Math Club Officer</strong> – Ways and Means</li>
+                                <li><strong>School Journalist</strong> – (2023–2024)</li>
+                                <li><strong>DSPC Radio Broadcasting Contestant</strong></li>
+                                <li><strong>Research Project</strong> – Automatic Trash Can Detector with Arduino</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Competencies with Accordion -->
+                <div class="cv__section" data-animate>
+                    <h4 class="cv__section-title">Technical Competencies</h4>
+                    <div class="cv__accordion">
+                        <button class="cv__accordion-btn cv__accordion-btn--active" data-accordion="competencies">
+                            <span>Core Technical Skills</span>
+                            <span class="cv__accordion-icon">−</span>
+                        </button>
+                        <div class="cv__accordion-content cv__accordion-content--active">
+                            <ul class="cv__competencies-list">
+                                <li>Software & Web Development (Full-Stack)</li>
+                                <li>Computer Vision & Automation</li>
+                                <li>Database Management & Design</li>
+                                <li>Cybersecurity Fundamentals & CTF</li>
+                                <li>Project Planning & Coordination</li>
+                                <li>IoT Systems & Arduino Development</li>
+                            </ul>
+                        </div>
+
+                        <button class="cv__accordion-btn" data-accordion="competencies">
+                            <span>Professional Core Skills</span>
+                            <span class="cv__accordion-icon">+</span>
+                        </button>
+                        <div class="cv__accordion-content">
+                            <ul class="cv__competencies-list">
+                                <li>Analytical thinking & logical reasoning</li>
+                                <li>Problem-solving & solution design</li>
+                                <li>Technical communication & documentation</li>
+                                <li>Leadership & team coordination</li>
+                                <li>Adaptability & continuous learning</li>
+                                <li>Attention to detail & quality assurance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Download CV Button -->
+                <div class="cv__footer" data-animate>
+                    <a href="Resume & CV/CV LLOREN.pdf" download="KlintVincent_CV.pdf" class="btn btn--magnetic cv__download-btn">
+                        <span class="btn__text">📄 Download Full CV (PDF)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact__content">
+                <h2 class="section__title" data-animate>Get In Touch</h2>
+                <p class="contact__text" data-animate>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out.</p>
+                <a href="mailto:llorenklintvincent@gmail.com" class="contact__email" data-animate>llorenklintvincent@gmail.com</a>
+                
+                <!-- Optional Contact Form -->
+                <form class="contact__form" data-animate>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary" id="contactSubmitBtn">
+                        <span class="btn__text">Send Message</span>
+                        <span class="btn__spinner" id="contactSpinner" style="display: none;">●●●</span>
+                    </button>
+                    <div id="contactMessage" class="contact__message" style="display: none;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">&copy; 2026 Klint Vincent M. Lloren. Crafted with care.</p>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
